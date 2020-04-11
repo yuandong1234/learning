@@ -1,0 +1,11 @@
+<!--首页-->
+<view class="index_container">
+	<block wx:for="{{newsList}}" wx:key="index">
+		<text class="item-title">{{item.title}}</text>
+		<view class="item-images">
+			<image class="item-image" mode="widthFix" src="{{item.thumbnail_pic_s}}"></image>
+			<image class="item-image" mode="widthFix" src="{{item.thumbnail_pic_s02}}"></image>
+			<image class="item-image" mode="widthFix" src="{{item.thumbnail_pic_s03}}"></image>
+		</view>
+	</block>
+</view>
