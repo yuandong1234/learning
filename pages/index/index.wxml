@@ -1,11 +1,15 @@
 <!--首页-->
-<view class="index_container">
-	<block wx:for="{{newsList}}" wx:key="index">
-		<text class="item-title">{{item.title}}</text>
-		<view class="item-images">
-			<image class="item-image" mode="widthFix" src="{{item.thumbnail_pic_s}}"></image>
-			<image class="item-image" mode="widthFix" src="{{item.thumbnail_pic_s02}}"></image>
-			<image class="item-image" mode="widthFix" src="{{item.thumbnail_pic_s03}}"></image>
+<view  class="index-container">
+	<block wx:for="{{newsList}}" wx:key="{{item.url}}">
+		<view class="item" bindtap="goDetail" data-url="{{item.url}}">
+			<text class="item-title">{{item.title}}</text>
+			<view class="item-images">
+				<image mode="widthFix" src="{{item.thumbnail_pic_s}}"></image>
+				<image wx:if="{{item.thumbnail_pic_s02}}" class="item-image" mode="widthFix" src="{{item.thumbnail_pic_s02}}"></image>
+				<image wx:if="{{item.thumbnail_pic_s03}}" class="item-image" mode="widthFix" src="{{item.thumbnail_pic_s03}}"></image>
+			</view>
 		</view>
+		<!-- 分割线 -->
+		<view class="divider"></view>	
 	</block>
 </view>

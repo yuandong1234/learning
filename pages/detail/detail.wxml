@@ -1,0 +1,4 @@
+<!--详情-->
+<view>
+	<web-view src="{{detailUrl}}"></web-view>
+</view>

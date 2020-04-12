@@ -1,18 +1,43 @@
-.container{
+.index-container,view {
   background-color: #f2f3f5;
+  padding: 0rpx;
+  margin: 0rpx;
+  font-size: 0;
 }
 
-.item-title{
+.item {
+  background-color: white;
+  padding-left: 12rpx;
+  padding-right: 12rpx;
+  padding-top: 8.6rpx;
+  padding-bottom: 15rpx;
+  font-size: 0rpx;
+}
+
+.item-title {
   color: black;
-  size: 14px;
+  font-size: 32rpx;
+  line-height: 120%;
 }
 
-.item-images{
+.item-images {
   width: 100%;
   display: flex;
   flex-direction: row;
+  margin-top: 12rpx;
 }
 
-.item-image{
+.item-images image {
   width: 100%;
+  border-radius: 10rpx;
+}
+
+.item-image {
+  margin-left: 10rpx;
+}
+
+.divider {
+  background: #dcdcdc;
+  width: 100%;
+  height: 1rpx;
 }
