@@ -1,3 +1,4 @@
+var api = require('../../const/api.js');
 /**
  * 获取本地数据
  */
@@ -332,7 +333,7 @@ function getLocalIndexData() {
  */
 function rquestIndexData(onSuccess, onComplete) {
   wx.request({
-    url: 'https://v.juhe.cn/toutiao/index',
+    url: api.INDEX_DATA,
     method: "GET",
     data: {
       key: 'aa47561558f285fee99f1943c7b844fb',
