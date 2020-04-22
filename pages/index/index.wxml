@@ -1,6 +1,6 @@
 <!--首页-->
 <view class="index-container">
-	<block wx:for="{{newsList}}" wx:key="url">
+	<block wx:for="{{newsList}}" wx:key="index">
 		<view class="item" bindtap="goDetail" data-url="{{item.url}}">
 			<text class="item-title">{{item.title}}</text>
 			<view class="item-images">
@@ -11,5 +11,9 @@
 		</view>
 		<!-- 分割线 -->
 		<view class="divider"></view>
+	</block>
+
+	<block wx:if="{{showLoading}}">
+		<view class="loading">加载中...</view>
 	</block>
 </view>
