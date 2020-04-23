@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    bannerData: []
+    bannerData: [],
+    imgheights: []
   },
 
   /**
@@ -16,7 +17,8 @@ Page({
     var data = bannerSerice.getBannerData();
     console.log(data);
     this.setData({
-      bannerData: data
+      bannerData: data,
+      current: 0
     });
   },
 
@@ -67,5 +69,30 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  /**
+   * 图片加载完成
+   * @param {*} e 
+   */
+  imageLoad: function (e) { //获取图片真实宽度  
+    console.log(e);
+    var imgwidth = e.detail.width;
+    var imgheight = e.detail.height;
+    //宽高比  
+    var ratio = imgwidth / imgheight;
+    //计算的高度值  
+    var viewHeight = 750 / ratio;
+    var imgheight = viewHeight;
+    var imgheights = this.data.imgheights;
+    imgheights[e.target.dataset.id] = imgheight;
+    this.setData({
+      imgheights: imgheights
+    })
+  },
+
+  bindchange: function (e) { // current 改变时会触发 change 事件
+    this.setData({
+      current: e.detail.current
+    })
+  },
 })

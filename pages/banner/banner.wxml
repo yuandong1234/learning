@@ -1,12 +1,17 @@
 <!--pages/banner/banner.wxml-->
 <view class="page-container">
 	<view class="page-body">
-		<swiper>
+		<!-- swiper不能根据内容自适应高度 -->
+		<swiper style="height:{{imgheights[current]}}rpx" previous-margin="10px" next-margin="10px" circular="true" autoplay="true" bindchange="bindchange">
 			<block wx:for="{{bannerData}}" wx:key="index">
 				<swiper-item>
-					<image class="swiper-item-image" src="{{item.thumbnail_pic_s}}"></image>
+					<view class="swiper-item">
+						<image class="item-image" src="{{item}}" data-id="{{index}}" bindload="imageLoad" mode="widthFix"></image>
+					</view>
 				</swiper-item>
 			</block>
 		</swiper>
+
+		<image class="image-demo" src="{{bannerData[0]}}" mode="widthFix"></image>
 	</view>
 </view>

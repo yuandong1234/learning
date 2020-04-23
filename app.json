@@ -21,7 +21,7 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/personal/personal",
+        "pagePath": "pages/banner/banner",
         "iconPath": "images/icon_personal.png",
         "selectedIconPath": "images/icon_personal_h.png",
         "text": "我的"
