@@ -1,0 +1,12 @@
+<!--pages/banner/banner.wxml-->
+<view class="page-container">
+	<view class="page-body">
+		<swiper>
+			<block wx:for="{{bannerData}}" wx:key="index">
+				<swiper-item>
+					<image class="swiper-item-image" src="{{item.thumbnail_pic_s}}"></image>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+</view>
