@@ -2,7 +2,7 @@
 <view class="page-container">
 	<view class="page-body">
 		<!-- swiper不能根据内容自适应高度 -->
-		<swiper style="height:{{imgheights[current]}}rpx" previous-margin="10px" next-margin="10px" circular="true" autoplay="true" bindchange="bindchange">
+		<swiper style="height:{{imgheights[current]}}rpx" previous-margin="10px" next-margin="10px" circular="true" autoplay="false" bindchange="bindchange" interval="3000">
 			<block wx:for="{{bannerData}}" wx:key="index">
 				<swiper-item>
 					<view class="swiper-item">
