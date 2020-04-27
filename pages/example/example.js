@@ -5,7 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    exampleData: [{
+        id: 0,
+        title: '列表'
+      },
+      {
+        id: 1,
+        title: '轮播图'
+      }
+    ]
   },
 
   /**
@@ -62,5 +70,25 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 跳转界面
+   */
+  goPage: function (e) {
+    let id = e.currentTarget.dataset.id;
+    console.log(id);
+    let path = "";
+    switch (id) {
+      case 0: //列表
+      path="../list/list"
+        break;
+      case 1: //轮播图
+      path="../banner/banner"
+        break;
+    }
+    wx.navigateTo({
+			url: path
+		})
   }
 })

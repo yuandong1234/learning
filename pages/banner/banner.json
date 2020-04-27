@@ -1,5 +1,6 @@
 {
   "usingComponents": {},
   "navigationBarTextStyle": "black",
-  "navigationBarTitleText": "轮播图"
+  "navigationBarTitleText": "轮播图",
+  "enablePullDownRefresh": true
 }

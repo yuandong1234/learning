@@ -1,2 +1,18 @@
-<!--pages/example/example.wxml-->
-<text>pages/example/example.wxml</text>
+<!-- 示例列表 -->
+
+<view class="page_container">
+	<view class="page_body">
+
+		<view>
+			<block wx:for="{{exampleData}}" wx:key="id">
+				<view class="item" hover-class="item-hover" bindtap="goPage" data-id="{{item.id}}">
+					<view class="item-title">
+						<text>{{item.title}}</text>
+					</view>
+					<view class="item-divider"></view>
+				</view>
+			</block>
+		</view>
+    
+	</view>
+</view>
