@@ -1,5 +1,5 @@
 // pages/index/index.js
-var indexSerice = require('./indexService.js');
+var indexSerice = require('./listService.js');
 Page({
 
 	/**

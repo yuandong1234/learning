@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/list/list",
     "pages/personal/personal",
     "pages/logs/logs",
     "pages/detail/detail",
@@ -15,7 +15,7 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/list/list",
         "iconPath": "images/icon_home.png",
         "selectedIconPath": "images/icon_home_h.png",
         "text": "首页"
