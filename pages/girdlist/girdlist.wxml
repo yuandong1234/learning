@@ -1,0 +1,20 @@
+<!-- 网格列表 -->
+<view class="page_container">
+	<view class="page_body">
+
+		<view class="item-container">
+			<block wx:for="{{listData}}" wx:key="index">
+				<view class="item" hover-class="item-hover" bindtap="goPage" data-id="{{item.id}}">
+					<image class="item-image" mode="widthFix" src="{{item.thumbnail_pic_s}}"></image>
+					<view class="item-title">
+						<text>{{item.title}}</text>
+					</view>
+				</view>
+			</block>
+			<block wx:if="{{showLoading}}">
+				<view class="loading">加载中...</view>
+			</block>
+		</view>
+
+	</view>
+</view>

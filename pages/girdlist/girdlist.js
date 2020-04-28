@@ -1,30 +1,25 @@
-// pages/example/example.js
+// pages/girdlist/girdlsit.js
+var service = require('./girdListService.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    exampleData: [{
-        id: 0,
-        title: '列表'
-      },
-      {
-        id: 1,
-        title: '轮播图'
-      },
-      {
-        id: 2,
-        title: '网格列表'
-      }
-    ]
+    listData: [],
+    "hasMore": true,
+    "showLoading": false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var localData = service.getLocalData();
+    console.log(localData);
+    this.setData({
+      listData: localData
+    });
   },
 
   /**
@@ -66,7 +61,19 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    if (!this.data.showLoading && !this.data.hasMore) {
+      return;
+    }
+    this.setData({
+      "showLoading": true
+    });
+    //模拟加载数据
+    var moreData = service.getLocalData();
+    this.setData({
+      listData: this.data.listData.concat(moreData),
+      "showLoading": false,
+      "hasMore": false
+    });
   },
 
   /**
@@ -74,28 +81,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  /**
-   * 跳转界面
-   */
-  goPage: function (e) {
-    let id = e.currentTarget.dataset.id;
-    console.log(id);
-    let path = "";
-    switch (id) {
-      case 0: //列表
-        path = "../list/list"
-        break;
-      case 1: //轮播图
-        path = "../banner/banner"
-        break;
-      case 2:
-        path = "../girdlist/girdlist"
-        break;
-    }
-    wx.navigateTo({
-      url: path
-    })
   }
 })

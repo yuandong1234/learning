@@ -5,7 +5,8 @@
     "pages/personal/personal",
     "pages/logs/logs",
     "pages/detail/detail",
-    "pages/banner/banner"
+    "pages/banner/banner",
+    "pages/girdlist/girdlist"
   ],
   "window": {
     "backgroundTextStyle": "light",

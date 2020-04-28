@@ -15,6 +15,7 @@
   width: 100%;
   padding-top:8.6rpx;
   padding-bottom: 15rpx;
+  text-align: center;
 }
 
 .item-divider{
