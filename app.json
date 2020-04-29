@@ -6,7 +6,8 @@
     "pages/logs/logs",
     "pages/detail/detail",
     "pages/banner/banner",
-    "pages/girdlist/girdlist"
+    "pages/girdlist/girdlist",
+    "pages/templatedemo/templatedemo"
   ],
   "window": {
     "backgroundTextStyle": "light",

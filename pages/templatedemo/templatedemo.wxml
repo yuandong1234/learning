@@ -1,0 +1,8 @@
+<import src="../templatedemo/banner.wxml" />
+<view class="page-container">
+	<view class="page-body">
+      <template is="banner" data="{{bannerList}}"></template>
+	</view>
+
+	<image src=""></image>
+</view>

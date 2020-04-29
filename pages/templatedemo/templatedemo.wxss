@@ -1,0 +1,6 @@
+@import "../templatedemo/banner.wxss";
+.page-container,
+.page-body {
+  margin: 0;
+  padding: 0;
+}

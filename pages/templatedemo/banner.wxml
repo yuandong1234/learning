@@ -1,0 +1,13 @@
+<template name="banner">
+	<view class="banner-container">
+		<swiper class="swiper" previous-margin="10px" next-margin="10px" circular="true" autoplay="true" interval="3000" indicator-dots="true">
+			<block wx:for="{{bannerList}}" wx:key="index">
+				<swiper-item class="swiper-item">
+					<view class="banner-item">
+						<image class="banner-item-image" mode="widthFix" src="{{item}}"></image>
+					</view>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+</template>

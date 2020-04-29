@@ -1,26 +1,14 @@
-// pages/example/example.js
+// pages/templatedemo/templatedemo.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    exampleData: [{
-        id: 0,
-        title: '列表'
-      },
-      {
-        id: 1,
-        title: '轮播图'
-      },
-      {
-        id: 2,
-        title: '网格列表'
-      },
-      {
-        id: 3,
-        title: '模板使用'
-      }
+    bannerList: [
+      "https://03imgmini.eastday.com/mobile/20200411/2020041121_a9bf94ed750646c99d99dc19cb47e2c4_3103_cover_mwpm_03200403.jpg",
+      "https://06imgmini.eastday.com/mobile/20200411/20200411214256_ff778dc240d74f020317f706a753264f_4_mwpm_03200403.jpg",
+      "https://01imgmini.eastday.com/mobile/20200411/20200411213908_17f29da10adb9e727c8a09df8b1bbf65_1_mwpm_03200403.jpg",
     ]
   },
 
@@ -78,31 +66,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  /**
-   * 跳转界面
-   */
-  goPage: function (e) {
-    let id = e.currentTarget.dataset.id;
-    console.log(id);
-    let path = "";
-    switch (id) {
-      case 0: //列表
-        path = "../list/list"
-        break;
-      case 1: //轮播图
-        path = "../banner/banner"
-        break;
-      case 2://网格列表
-        path = "../girdlist/girdlist"
-        break;
-      case 3://模板使用
-        path = "../templatedemo/templatedemo"
-        break;
-    }
-    wx.navigateTo({
-      url: path
-    })
   }
 })
