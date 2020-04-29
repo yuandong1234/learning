@@ -6,9 +6,9 @@ Page({
    */
   data: {
     bannerList: [
-      "https://03imgmini.eastday.com/mobile/20200411/2020041121_a9bf94ed750646c99d99dc19cb47e2c4_3103_cover_mwpm_03200403.jpg",
-      "https://06imgmini.eastday.com/mobile/20200411/20200411214256_ff778dc240d74f020317f706a753264f_4_mwpm_03200403.jpg",
-      "https://01imgmini.eastday.com/mobile/20200411/20200411213908_17f29da10adb9e727c8a09df8b1bbf65_1_mwpm_03200403.jpg",
+      "http://q9jxjjee4.bkt.clouddn.com/3cd65cea-4a20-4429-861c-04dcfc4271fb.jpg",
+      "http://q9jxjjee4.bkt.clouddn.com/3ecd2673-618b-4c89-9d29-5c04819b7093.jpg",
+      "http://q9jxjjee4.bkt.clouddn.com/81d6a158-e025-4c4b-a316-215268c0cacb.jpg"
     ]
   },
 
