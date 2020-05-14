@@ -20,6 +20,10 @@ Page({
       {
         id: 3,
         title: '模板使用'
+      },
+      {
+        id: 4,
+        title: '底部滚动选择器'
       }
     ]
   },
@@ -99,6 +103,9 @@ Page({
         break;
       case 3://模板使用
         path = "../templatedemo/templatedemo"
+        break;
+        case 4://底部滚动选择器
+        path = "../pickerdemo/picker"
         break;
     }
     wx.navigateTo({

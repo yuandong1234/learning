@@ -1,0 +1,23 @@
+.item-sex{
+  text-align: center;
+  background-color:#f2f3f5 ;
+  padding: 20rpx;
+}
+
+.item-time{
+  text-align: center;
+  background-color:#f2f3f5 ;
+  padding: 20rpx;
+}
+
+.item-date{
+  text-align: center;
+  background-color:#f2f3f5 ;
+  padding: 20rpx;
+}
+
+.item-region{
+  text-align: center;
+  background-color:#f2f3f5 ;
+  padding: 20rpx;
+}

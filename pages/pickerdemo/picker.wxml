@@ -1,0 +1,75 @@
+<view class="page_container">
+	<view class="page_body">
+		<view class="sex">
+			<view>普通选择器</view>
+			<picker class="picker-sex" mode="selector" range="{{selecorArray}}" value="{{sexIndex}}" bindchange="bindSexChange" header-text="性别">
+				<view class="item-sex">
+					<block wx:if="{{sex==-1}}">
+						<view>请选择性别</view>
+					</block>
+					<block wx:else>
+						<view>{{selecorArray[sexIndex]}}</view>
+					</block>
+				</view>
+			</picker>
+		</view>
+
+		<view>
+			<view class="time">时间选择器</view>
+			<picker mode="time" value="12:00" start="00:00" end="23:59" header-text="时间" bindchange="bindTimeChange">
+				<view class="item-time">
+					<block wx:if="{{time==null||time==''}}">
+						<view> 请选择时间</view>
+					</block>
+					<block wx:else>
+						<view>{{time}}</view>
+					</block>
+				</view>
+			</picker>
+		</view>
+
+		<view>
+			<view class="date">日期选择器</view>
+			<picker mode="date" start="1990-01-01" value="{{date}}" header-text="日期" bindchange="bindDateChange">
+				<view class="item-date">
+					<block wx:if="{{date==null||date==''}}">
+						<view> 请选择日期</view>
+					</block>
+					<block wx:else>
+						<view>{{date}}</view>
+					</block>
+				</view>
+			</picker>
+		</view>
+
+
+		<view>
+			<view class="region">地区选择器</view>
+			<picker mode="region" start="1990-01-01" value="{{region}}" header-text="地区" bindchange="bindRegionChange">
+				<view class="item-region">
+					<block wx:if="{{region==null||region.length==0}}">
+						<view>请选择地区</view>
+					</block>
+					<block wx:else>
+						<view>{{region}}</view>
+					</block>
+				</view>
+			</picker>
+		</view>
+
+		<view>
+			<view class="multiSelector">自定义多列选择器</view>
+			<picker mode="multiSelector" range="{{objectMultiArray}}" range-key="{{'name'}}" value="{{multiIndex}}" header-text="多项选择列表" bindchange="bindMultiDataChange" bindcolumnchange="bindMultiColumnChange">
+				<view class="item-region">
+					<block wx:if="{{multiArray==null||multiArray.length==0}}">
+						<view>请选择</view>
+					</block>
+					<block wx:else>
+						<view>{{multiArray}}</view>
+					</block>
+				</view>
+			</picker>
+		</view>
+
+	</view>
+</view>
