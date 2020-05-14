@@ -1,18 +1,14 @@
-.banner-container {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.swiper {
+/*
+*注意：
+*1. align-items flex容器内的子元素在当前行的侧轴（纵轴）方向上的对齐方式。
+*2. align-content flex容器内的子元素在垂直方向上的对齐排列方式
+*3. justify-content flex容器内的子元素在水平方向上的对齐排列方式
+*/
+.banner-item {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.banner-item {
-  width: 100%;
 }
 
 .banner-item-image {
