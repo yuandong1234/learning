@@ -24,6 +24,10 @@ Page({
       {
         id: 4,
         title: '底部滚动选择器'
+      },
+      {
+        id: 5,
+        title: '自定义dialog'
       }
     ]
   },
@@ -106,6 +110,9 @@ Page({
         break;
         case 4://底部滚动选择器
         path = "../pickerdemo/picker"
+        break;
+        case 5://自定义view
+        path = "../dialogdemo/dialog"
         break;
     }
     wx.navigateTo({

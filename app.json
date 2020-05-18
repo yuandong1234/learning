@@ -8,7 +8,8 @@
     "pages/banner/banner",
     "pages/girdlist/girdlist",
     "pages/templatedemo/templatedemo",
-    "pages/pickerdemo/picker"
+    "pages/pickerdemo/picker",
+    "pages/dialogdemo/dialog"
   ],
   "window": {
     "backgroundTextStyle": "light",

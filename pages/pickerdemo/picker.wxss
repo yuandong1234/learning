@@ -1,23 +1,29 @@
-.item-sex{
+.item-sex {
   text-align: center;
-  background-color:#f2f3f5 ;
+  background-color: #f2f3f5;
   padding: 20rpx;
 }
 
-.item-time{
+.item-time {
   text-align: center;
-  background-color:#f2f3f5 ;
+  background-color: #f2f3f5;
   padding: 20rpx;
 }
 
-.item-date{
+.item-date {
   text-align: center;
-  background-color:#f2f3f5 ;
+  background-color: #f2f3f5;
   padding: 20rpx;
 }
 
-.item-region{
+.item-region {
   text-align: center;
-  background-color:#f2f3f5 ;
+  background-color: #f2f3f5;
+  padding: 20rpx;
+}
+
+.item-mult-selector {
+  text-align: center;
+  background-color: #f2f3f5;
   padding: 20rpx;
 }

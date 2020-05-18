@@ -59,13 +59,13 @@
 
 		<view>
 			<view class="multiSelector">自定义多列选择器</view>
-			<picker mode="multiSelector" range="{{objectMultiArray}}" range-key="{{'name'}}" value="{{multiIndex}}" header-text="多项选择列表" bindchange="bindMultiDataChange" bindcolumnchange="bindMultiColumnChange">
-				<view class="item-region">
+			<picker mode="multiSelector" range="{{multiArray}}" value="{{multiIndex}}" header-text="多项选择列表" bindchange="bindMultiDataChange" bindcolumnchange="bindMultiColumnChange">
+				<view class="item-mult-selector">
 					<block wx:if="{{multiArray==null||multiArray.length==0}}">
 						<view>请选择</view>
 					</block>
 					<block wx:else>
-						<view>{{multiArray}}</view>
+						<view>{{multiArray[0][multiIndex[0]]}},{{multiArray[1][multiIndex[1]]}},{{multiArray[2][multiIndex[2]]}}</view>
 					</block>
 				</view>
 			</picker>

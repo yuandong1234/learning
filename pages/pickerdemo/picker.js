@@ -132,7 +132,27 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    //TODO 待处理
+    var objectMultiArray = this.data.objectMultiArray;
+    var oneColumnValue = [];
+    var sencondColumnValue = [];
+    var thridColumnValue = [];
+    for (let i = 0; i < objectMultiArray.length; i++) {
+      oneColumnValue.push(objectMultiArray[i].name);
+    }
 
+    for (let i = 0; i < objectMultiArray[0].city.length; i++) {
+      sencondColumnValue.push(objectMultiArray[0].city[i].name);
+    }
+
+    for (let i = 0; i < objectMultiArray[0].city[0].area.length; i++) {
+      thridColumnValue.push(objectMultiArray[0].city[0].area[i].name);
+    }
+
+    this.setData({
+      "multiArray": [oneColumnValue, sencondColumnValue, thridColumnValue]
+    });
+    console.log(this.data.multiArray);
   },
 
   /**
@@ -223,8 +243,48 @@ Page({
   bindMultiColumnChange: function (e) {
     var detail = e.detail;
     console.log(detail);
-    this.setData({
+    var column = detail.column;
+    var value = detail.value;
 
+    var objectMultiArray = this.data.objectMultiArray;
+
+    var oneColumnValue = this.data.multiArray[0];
+    var sencondColumnValue = this.data.multiArray[1];
+    var thridColumnValue = this.data.multiArray[2];
+
+    var oneValue = this.data.multiIndex[0];
+    var sencondValue = this.data.multiIndex[1];
+    var thridValue = this.data.multiIndex[2];
+    switch (column) {
+      case 0:
+        var sencondColumnValue = [];
+        var thridColumnValue = [];
+        for (let i = 0; i < objectMultiArray[value].city.length; i++) {
+          sencondColumnValue.push(objectMultiArray[value].city[i].name);
+        }
+
+        for (let i = 0; i < objectMultiArray[value].city[0].area.length; i++) {
+          thridColumnValue.push(objectMultiArray[value].city[0].area[i].name);
+        }
+        oneValue = value;
+        sencondValue = 0;
+        thridValue = 0;
+        break;
+      case 1:
+        var thridColumnValue = [];
+        for (let i = 0; i < objectMultiArray[oneValue].city[value].area.length; i++) {
+          thridColumnValue.push(objectMultiArray[oneValue].city[value].area[i].name);
+        }
+        sencondValue = value;
+        thridValue = 0;
+        break;
+      case 2:
+        thridValue = value;
+        break;
+    }
+    this.setData({
+      "multiArray": [oneColumnValue, sencondColumnValue, thridColumnValue],
+      "multiIndex": [oneValue, sencondValue, thridValue]
     });
   },
 })
