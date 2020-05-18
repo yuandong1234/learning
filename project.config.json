@@ -81,6 +81,13 @@
 					"id": -1,
 					"name": "pages/pickerdemo/picker",
 					"pathName": "pages/pickerdemo/picker",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/dialogdemo/dialog",
+					"pathName": "pages/dialogdemo/dialog",
 					"scene": null
 				}
 			]
