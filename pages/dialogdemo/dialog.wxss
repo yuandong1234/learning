@@ -1,1 +1,94 @@
-/* pages/dialogdemo/dialog.wxss */
+.dialog-mask {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.dialog-container {
+  position: fixed;
+  z-index: 1000;
+  width: 80%;
+  max-width: 750rpx;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 6rpx;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.dialog-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  text-align: center;
+  padding: 24rpx;
+  color: black;
+}
+
+.dialog-content {
+  font-size: 30rpx;
+  text-align: center;
+  color: #808080;
+  padding: 24rpx;
+}
+
+.dialog-meun {
+  position: relative;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dialog-meun::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 2rpx;
+  border-top: 2rpx solid #D5D5D6;
+  color: #D5D5D6;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5)
+}
+
+.dialog-menu-item {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 36rpx;
+  flex: 1;
+  color: #353535;
+  position: relative;
+}
+
+.dialog-meun-confirm:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2rpx;
+  bottom: 0;
+  border-left: 2rpx solid #D5D5D6;
+  color: #D5D5D6;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+}
+
+.dialog-meun-confirm {
+  color: #09BB07;
+}
+
+.dialog-menu-item:active {
+  background-color: #eee;
+}

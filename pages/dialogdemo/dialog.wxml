@@ -1,5 +1,17 @@
 <view class="page-container">
 	<view class="pager-body">
-  
+		<view class="dialog" hidden="{{isShowDialog}}">
+			<!-- 遮罩层 -->
+			<view class="dialog-mask"></view>
+			<!-- 容器-->
+			<view class="dialog-container">
+				<view class="dialog-title">温馨提示</view>
+				<view class="dialog-content">这是个简单的提示框</view>
+				<view class="dialog-meun">
+					<view class="dialog-menu-item dialog-meun-cancel">取消</view>
+					<view class="dialog-menu-item dialog-meun-confirm">确定</view>
+				</view>
+			</view>
+		</view>
 	</view>
 </view>
