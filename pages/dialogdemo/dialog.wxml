@@ -8,9 +8,9 @@
 				<view class="dialog-title">温馨提示</view>
 				<view class="dialog-content">这是个简单的提示框</view>
 				<view class="dialog-meun">
-					<view class="dialog-menu-item dialog-meun-cancel">取消</view>
+					<view class="dialog-menu-item dialog-meun-cancel" catchtap="cancelEvent">取消</view>
 					<view class="dialog-menu-divider"></view>
-					<view class="dialog-menu-item dialog-meun-confirm">确定</view>
+					<view class="dialog-menu-item dialog-meun-confirm" catchtap="confirmEvent">确定</view>
 				</view>
 			</view>
 		</view>

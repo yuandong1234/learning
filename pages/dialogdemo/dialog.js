@@ -62,5 +62,18 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  cancelEvent: function (e) {
+    wx.showToast({
+      title: '取消',
+      icon: 'none'
+    })
+  },
+
+  confirmEvent: function (e) {
+    wx.showToast({
+      title: '确认',
+      icon: 'none'
+    })
   }
 })
