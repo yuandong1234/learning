@@ -26,20 +26,23 @@
   font-size: 36rpx;
   font-weight: bold;
   text-align: center;
-  padding: 24rpx;
+  margin: 24rpx 0;
   color: black;
 }
 
 .dialog-content {
   font-size: 30rpx;
-  text-align: center;
   color: #808080;
-  padding: 24rpx;
+  min-height: 100rpx;
+  margin: 24rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dialog-meun {
   position: relative;
-  height: 80rpx;
+  height: 100rpx;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -62,28 +65,40 @@
 }
 
 .dialog-menu-item {
-  height: 80rpx;
-  line-height: 80rpx;
+  height: 100rpx;
+  line-height: 100rpx;
   font-size: 36rpx;
   flex: 1;
   color: #353535;
-  position: relative;
 }
 
-.dialog-meun-confirm:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 2rpx;
-  bottom: 0;
-  border-left: 2rpx solid #D5D5D6;
-  color: #D5D5D6;
+.dialog-menu-divider {
+  width: 1rpx;
+  height: 100rpx;
+  background-color: #D5D5D6;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
   -webkit-transform: scaleX(0.5);
   transform: scaleX(0.5);
 }
+
+/* .dialog-menu-item.dialog-meun-confirm {
+  position: relative;
+} */
+
+/* .dialog-meun-confirm::before {
+  content: "";
+  height: 100rpx;
+  width: 1rpx;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: #D5D5D6;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+} */
 
 .dialog-meun-confirm {
   color: #09BB07;
