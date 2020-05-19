@@ -73,7 +73,7 @@
 }
 
 .dialog-menu-divider {
-  width: 1rpx;
+  width: 2rpx;
   height: 100rpx;
   background-color: #D5D5D6;
   -webkit-transform-origin: 0 0;
