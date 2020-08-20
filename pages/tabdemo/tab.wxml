@@ -1,0 +1,12 @@
+<!--pages/tabdemo/tab.wxml-->
+<view class="view-container">
+	<view class="view-tab">
+		<scroll-view scroll-x="true">
+			<block wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item">
+				<view class="tab-item">
+          <text>{{item.title}}</text>
+				</view>
+			</block>
+		</scroll-view>
+	</view>
+</view>

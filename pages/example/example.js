@@ -28,6 +28,10 @@ Page({
       {
         id: 5,
         title: '自定义dialog'
+      },
+      {
+        id: 6,
+        title: '自定义tab'
       }
     ]
   },
@@ -102,17 +106,20 @@ Page({
       case 1: //轮播图
         path = "../banner/banner"
         break;
-      case 2://网格列表
+      case 2: //网格列表
         path = "../girdlist/girdlist"
         break;
-      case 3://模板使用
+      case 3: //模板使用
         path = "../templatedemo/templatedemo"
         break;
-        case 4://底部滚动选择器
+      case 4: //底部滚动选择器
         path = "../pickerdemo/picker"
         break;
-        case 5://自定义view
+      case 5: //自定义view
         path = "../dialogdemo/dialog"
+        break;
+      case 6: //自定义tab
+        path = "../tabdemo/tab"
         break;
     }
     wx.navigateTo({

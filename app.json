@@ -9,7 +9,8 @@
     "pages/girdlist/girdlist",
     "pages/templatedemo/templatedemo",
     "pages/pickerdemo/picker",
-    "pages/dialogdemo/dialog"
+    "pages/dialogdemo/dialog",
+    "pages/tabdemo/tab"
   ],
   "window": {
     "backgroundTextStyle": "light",

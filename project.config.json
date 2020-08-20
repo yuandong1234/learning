@@ -88,6 +88,13 @@
 					"id": -1,
 					"name": "pages/dialogdemo/dialog",
 					"pathName": "pages/dialogdemo/dialog",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabdemo/tab",
+					"pathName": "pages/tabdemo/tab",
 					"scene": null
 				}
 			]

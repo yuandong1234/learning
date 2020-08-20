@@ -1,0 +1,11 @@
+scroll-view {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.tab-item{
+  width: 100px;
+  background-color: brown;
+  display: inline-block;
+  text-align: center;
+}
