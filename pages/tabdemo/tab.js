@@ -6,15 +6,18 @@ Page({
    */
   data: {
     "tabList": [{
+      "id": 0,
       "title": "标签1",
       "isCheck": true
     }, {
+      "id": 1,
       "title": "标签2",
       "isCheck": false
     }, {
+      "id": 2,
       "title": "标签3",
       "isCheck": false
-    } ]
+    }]
   },
 
   /**
@@ -71,5 +74,12 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 标签选择
+   */
+  onTabSelected: function (e) {
+    console.log(e);
   }
 })

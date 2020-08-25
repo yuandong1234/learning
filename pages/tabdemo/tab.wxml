@@ -1,12 +1,35 @@
-<!--pages/tabdemo/tab.wxml-->
 <view class="view-container">
+<!-- 标签栏 -->
 	<view class="view-tab">
 		<scroll-view scroll-x="true">
-			<block wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item">
-				<view class="tab-item">
-          <text>{{item.title}}</text>
-				</view>
-			</block>
+			<view class="tab-container">
+				<block wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+					<view class="tab-item" data-index="{{index}}" catchtap="onTabSelected">
+						<view class="tab-item-container">
+							<view class="tab-item-title-container">
+								<text class="{{item.isCheck ? 'tab-item-title-selected':'tab-item-title'}}">{{item.title}}</text>
+							</view>
+							<view class="{{item.isCheck ? 'tab-item-indicator-selected':'tab-item-indicator'}}"></view>
+						</view>
+					</view>
+				</block>
+			</view>
 		</scroll-view>
+<!-- 第二种方式 -->
+		<!-- <scroll-view scroll-x="true">
+				<block wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+					<view class="tab-item2">
+						<view class="tab-item-container">
+							<view class="tab-item-title-container">
+								<text class="{{item.isCheck ? 'tab-item-title-selected':'tab-item-title'}}">{{item.title}}</text>
+							</view>
+							<view class="{{item.isCheck ? 'tab-item-indicator-selected':'tab-item-indicator'}}"></view>
+						</view>
+					</view>
+				</block>
+		</scroll-view> -->
+	</view>
+	<!-- 内容 -->
+	<view class="view-content">
 	</view>
 </view>
