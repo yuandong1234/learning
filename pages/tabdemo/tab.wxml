@@ -1,5 +1,5 @@
 <view class="view-container">
-<!-- 标签栏 -->
+	<!-- 标签栏 -->
 	<view class="view-tab">
 		<scroll-view scroll-x="true">
 			<view class="tab-container">
@@ -15,7 +15,7 @@
 				</block>
 			</view>
 		</scroll-view>
-<!-- 第二种方式 -->
+		<!-- 第二种方式 -->
 		<!-- <scroll-view scroll-x="true">
 				<block wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item" wx:key="id">
 					<view class="tab-item2">
@@ -31,5 +31,45 @@
 	</view>
 	<!-- 内容 -->
 	<view class="view-content">
+		<swiper class="swiper" current="{{tabIndex}}" bindchange="swiperTab">
+			<swiper-item class="swiper-item" catchtouchmove="stopTouchMove">
+				<scroll-view class="content-scroll-view" scroll-y="true">
+					<view class="content-view">第一屏1</view>
+					<view class="content-view">第一屏2</view>
+					<view class="content-view">第一屏3</view>
+					<view class="content-view">第一屏4</view>
+					<view class="content-view">第一屏5</view>
+					<view class="content-view">第一屏6</view>
+					<view class="content-view">第一屏7</view>
+					<view class="content-view">第一屏8</view>
+					<view class="content-view">第一屏9</view>
+					<view class="content-view">第一屏10</view>
+					<view class="content-view">第一屏11</view>
+					<view class="content-view">第一屏12</view>
+					<view class="content-view">第一屏13</view>
+					<view class="content-view">第一屏14</view>
+					<view class="content-view">第一屏15</view>
+					<view class="content-view">第一屏16</view>
+					<view class="content-view">第一屏17</view>
+					<view class="content-view">第一屏18</view>
+					<view class="content-view">第一屏19</view>
+					<view class="content-view">第一屏20</view>
+					<view class="content-view">第一屏21</view>
+					<view class="content-view">第一屏22</view>
+					<view class="content-view">第一屏23</view>
+					<view class="content-view">第一屏24</view>
+					<view class="content-view">第一屏25</view>
+					<view class="content-view">第一屏26</view>
+					<view class="content-view">第一屏27</view>
+					<view class="content-view">第一屏28</view>
+				</scroll-view>
+			</swiper-item>
+			<swiper-item class="swiper-item" catchtouchmove="stopTouchMove">
+				<view class="content-view">第二屏</view>
+			</swiper-item>
+			<swiper-item class="swiper-item" catchtouchmove="stopTouchMove">
+				<view class="content-view">第三屏</view>
+			</swiper-item>
+		</swiper>
 	</view>
 </view>

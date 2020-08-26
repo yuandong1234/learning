@@ -17,7 +17,8 @@ Page({
       "id": 2,
       "title": "标签3",
       "isCheck": false
-    }]
+    }],
+    "tabIndex": 0
   },
 
   /**
@@ -81,5 +82,36 @@ Page({
    */
   onTabSelected: function (e) {
     console.log(e);
+    var index = e.currentTarget.dataset.index;
+    var tabList = this.data.tabList;
+    for (var i = 0; i < tabList.length; i++) {
+      tabList[i].isCheck = (index == i);
+    }
+    this.setData({
+      "tabList": tabList,
+      "tabIndex": index
+    });
+  },
+
+  /**
+   * 页面切换监听
+   */
+  swiperTab: function (e) {
+    console.log(e);
+    var index = e.detail.current;
+    var tabList = this.data.tabList;
+    for (var i = 0; i < tabList.length; i++) {
+      tabList[i].isCheck = (index == i);
+    }
+    this.setData({
+      "tabList": tabList,
+    });
+  },
+
+  /**
+   * 禁止页面手动滑动
+   */
+  stopTouchMove: function () {
+    return false;
   }
 })
