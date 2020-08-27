@@ -16,6 +16,7 @@
 			</view>
 		</scroll-view>
 		<!-- 第二种方式 -->
+		<!-- 每个标签的宽度可以控制 -->
 		<!-- <scroll-view scroll-x="true">
 				<block wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item" wx:key="id">
 					<view class="tab-item2">
@@ -65,10 +66,42 @@
 				</scroll-view>
 			</swiper-item>
 			<swiper-item class="swiper-item" catchtouchmove="stopTouchMove">
-				<view class="content-view">第二屏</view>
+				<scroll-view class="content-scroll-view2" scroll-y="true">
+					<view class="content-view">第二屏1</view>
+					<view class="content-view">第二屏2</view>
+					<view class="content-view">第二屏3</view>
+					<view class="content-view">第二屏4</view>
+					<view class="content-view">第二屏5</view>
+					<view class="content-view">第二屏6</view>
+					<view class="content-view">第二屏7</view>
+					<view class="content-view">第二屏8</view>
+					<view class="content-view">第二屏9</view>
+					<view class="content-view">第二屏10</view>
+					<view class="content-view">第二屏11</view>
+					<view class="content-view">第二屏12</view>
+					<view class="content-view">第二屏13</view>
+					<view class="content-view">第二屏14</view>
+					<view class="content-view">第二屏15</view>
+					<view class="content-view">第二屏16</view>
+					<view class="content-view">第二屏17</view>
+					<view class="content-view">第二屏18</view>
+					<view class="content-view">第二屏19</view>
+					<view class="content-view">第二屏20</view>
+					<view class="content-view">第二屏21</view>
+					<view class="content-view">第二屏22</view>
+					<view class="content-view">第二屏23</view>
+					<view class="content-view">第二屏24</view>
+					<view class="content-view">第二屏25</view>
+					<view class="content-view">第二屏26</view>
+					<view class="content-view">第二屏27</view>
+					<view class="content-view">第二屏28</view>
+				</scroll-view>
 			</swiper-item>
 			<swiper-item class="swiper-item" catchtouchmove="stopTouchMove">
 				<view class="content-view">第三屏</view>
+			</swiper-item>
+				<swiper-item class="swiper-item" catchtouchmove="stopTouchMove">
+				<view class="content-view">第四屏</view>
 			</swiper-item>
 		</swiper>
 	</view>

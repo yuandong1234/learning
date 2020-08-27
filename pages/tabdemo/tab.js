@@ -17,7 +17,12 @@ Page({
       "id": 2,
       "title": "标签3",
       "isCheck": false
-    }],
+    }, {
+      "id": 3,
+      "title": "标签4",
+      "isCheck": false
+    }
+  ],
     "tabIndex": 0
   },
 

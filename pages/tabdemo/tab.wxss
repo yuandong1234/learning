@@ -24,6 +24,11 @@ scroll-view {
   align-items: center;
 }
 
+/*
+* flex-shrink：表示在父元素宽度不够的情况下是否自动收缩
+* 0表示不自动收缩 ,此时元素的宽度也可以控制
+* 1表示自动收缩
+*/
 .tab-item {
   width: 33.33%;
   display: inline-block;
@@ -100,7 +105,20 @@ scroll-view {
   font-size: 32rpx;
 }
 
-.content-scroll-view{
+.content-scroll-view {
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+
+.content-scroll-view ::-webkit-scrollbar {
+  width: 0rpx;
+  height: 0rpx;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.content-scroll-view2 {
   width: 100%;
   height: 100%;
   background-color: yellow;
