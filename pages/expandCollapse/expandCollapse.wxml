@@ -1,0 +1,21 @@
+<!-- 展开 折叠效果 -->
+<view class="view-container">
+	<view class="single-line">
+		<view style="color:red">单行文本省略</view>
+		<text class="single-line-text">今日各大社交媒体疯狂转发微信封号男子在腾讯公司坠亡</text>
+	</view>
+
+	<view class="multi-line" style="margin-top: 20rpx">
+		<view style="color:red">多行文本省略</view>
+		<text class="multi-line-text">在今天（27日）商务部举行的例行新闻发布会上，新闻发言人高峰介绍，近年来，商务部会同有关部门在餐饮领域开展“厉行勤俭节约、反对铺张浪费”行动、倡导“光盘行动”等，取得一定成效。</text>
+	</view>
+
+	<view style="margin-top: 20rpx">
+		<view class="expand-collapse-line">
+			<view style="color:red">展开收起效果</view>
+			<view class="myiconfont {{isExpand ?'icon-arrow-expand':'icon-arrow-collapse'}}" catchtap="expandOrCollapse"></view>
+		</view>
+		<view class="text-default {{isExpand ?'text-expand':'text-collapse'}}">根据探月工程四期总体安排，嫦娥七号任务将实现在月球南极着陆，开展极区环境与资源勘查。为充分发挥各方优势，瞄准国际先进水平，提升科学成果原创性，确保科学与应用目标圆满实现，拟对嫦娥七号任务部分主要载荷开展竞争择优工作。</view>
+	</view>
+
+</view>

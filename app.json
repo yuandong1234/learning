@@ -10,7 +10,8 @@
     "pages/templatedemo/templatedemo",
     "pages/pickerdemo/picker",
     "pages/dialogdemo/dialog",
-    "pages/tabdemo/tab"
+    "pages/tabdemo/tab",
+    "pages/expandCollapse/expandCollapse"
   ],
   "window": {
     "backgroundTextStyle": "light",
