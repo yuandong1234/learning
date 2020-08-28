@@ -32,6 +32,10 @@ Page({
       {
         id: 6,
         title: '自定义tab'
+      },
+      {
+        id: 7,
+        title: '文本单行、多行、收起展开'
       }
     ]
   },
@@ -120,6 +124,9 @@ Page({
         break;
       case 6: //自定义tab
         path = "../tabdemo/tab"
+        break;
+        case 7: //文本单行、多行、收起展开
+        path = "../expandCollapse/expandCollapse"
         break;
     }
     wx.navigateTo({
