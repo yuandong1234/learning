@@ -11,7 +11,8 @@
     "pages/pickerdemo/picker",
     "pages/dialogdemo/dialog",
     "pages/tabdemo/tab",
-    "pages/expandCollapse/expandCollapse"
+    "pages/expandCollapse/expandCollapse",
+    "pages/listGroup/listGroup"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -22,9 +22,9 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"useIsolateContext": true,
 		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"useIsolateContext": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
@@ -113,6 +113,13 @@
 					"id": -1,
 					"name": "pages/expandCollapse/expandCollapse",
 					"pathName": "pages/expandCollapse/expandCollapse",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/listGroup/listGroup",
+					"pathName": "pages/listGroup/listGroup",
 					"scene": null
 				}
 			]
