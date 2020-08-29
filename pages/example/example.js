@@ -36,6 +36,10 @@ Page({
       {
         id: 7,
         title: '文本单行、多行、收起展开'
+      },
+      {
+        id: 8,
+        title: '列表展开收起'
       }
     ]
   },
@@ -125,8 +129,11 @@ Page({
       case 6: //自定义tab
         path = "../tabdemo/tab"
         break;
-        case 7: //文本单行、多行、收起展开
+      case 7: //文本单行、多行、收起展开
         path = "../expandCollapse/expandCollapse"
+        break;
+      case 8: //列表展开收起
+        path = "../listGroup/listGroup"
         break;
     }
     wx.navigateTo({

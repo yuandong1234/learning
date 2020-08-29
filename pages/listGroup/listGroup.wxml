@@ -1,0 +1,22 @@
+<!--pages/listGroup/listGroup.wxml-->
+<view class="view-container">
+	<view class="list-container">
+		<block wx:for-items="{{list}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+			<view class="list-item-container">
+				<!-- 分组标题 -->
+				<view class="list-item-title">
+					<view>{{item.title}}</view>
+					<view class="myiconfont {{item.open?'item-arrow-up':'item-arrow-down'}}" catchtap="sublistToggle" data-id="{{index}}"></view>
+				</view>
+				<!-- 分组列表 -->
+				<view class="list-item-sulist {{item.open?'list-item-sulist-show':''}}">
+					<block wx:for-items="{{item.sublist}}" wx:for-item="subItem" wx:for-index="subIndex" wx:key="*this" wx>
+						<view class="sublist-item-container">
+							<view>{{subItem}}</view>
+						</view>
+					</block>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

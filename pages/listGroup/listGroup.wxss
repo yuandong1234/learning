@@ -1,0 +1,49 @@
+/* pages/listGroup/listGroup.wxss */
+@font-face {
+  font-family: 'iconfont';
+  /* project id 2034302 */
+  src: url('https://at.alicdn.com/t/font_2034302_h20jox63x2n.eot');
+  src: url('https://at.alicdn.com/t/font_2034302_h20jox63x2n.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_2034302_h20jox63x2n.woff2') format('woff2'),
+    url('https://at.alicdn.com/t/font_2034302_h20jox63x2n.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_2034302_h20jox63x2n.ttf') format('truetype'),
+    url('https://at.alicdn.com/t/font_2034302_h20jox63x2n.svg#iconfont') format('svg');
+}
+
+.myiconfont {
+  font-family: "Iconfont" !important;
+  font-size: 60rpx;
+  font-style: normal;
+  color: #ccc;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.list-item-container {
+  padding: 0 15rpx;
+}
+
+.list-item-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-arrow-down:before {
+  content: "\e63c";
+}
+
+.item-arrow-up:before {
+  content: "\e63b";
+}
+
+.list-item-sulist{
+  height: 0rpx;
+  overflow: hidden;
+}
+
+.list-item-sulist-show{
+  height: auto;
+  padding: 5rpx 15rpx;
+  background-color: gray;
+}
