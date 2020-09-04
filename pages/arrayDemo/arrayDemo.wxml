@@ -1,0 +1,5 @@
+<!--pages/test/test.wxml-->
+<view class="view-container">
+	<view>数组的创建、对象的创建、属性的添加、赋值</view>
+	<view style="color:red; margin-top:50rpx " catchtap="convertData">转换数据</view>
+</view>

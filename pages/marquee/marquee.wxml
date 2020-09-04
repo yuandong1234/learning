@@ -1,0 +1,8 @@
+<view class="view_container">
+	<view style="color:red">跑马灯效果</view>
+	<view class="marquee-container">
+		<view class="marquee-text" style="left:{{offsetLeft}}px">{{content}}</view>
+	</view>
+	<view class="marquee-button" catchtap="startMarquee">开启</view>
+	<view class="marquee-button" catchtap="stopMarquee">停止</view>
+</view>

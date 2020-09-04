@@ -22,9 +22,9 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false,
-		"useIsolateContext": true
+		"useIsolateContext": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
@@ -120,6 +120,20 @@
 					"id": -1,
 					"name": "pages/listGroup/listGroup",
 					"pathName": "pages/listGroup/listGroup",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/arrayDemo/arrayDemo",
+					"pathName": "pages/arrayDemo/arrayDemo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/marquee/marquee",
+					"pathName": "pages/marquee/marquee",
 					"scene": null
 				}
 			]

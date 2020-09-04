@@ -12,7 +12,9 @@
     "pages/dialogdemo/dialog",
     "pages/tabdemo/tab",
     "pages/expandCollapse/expandCollapse",
-    "pages/listGroup/listGroup"
+    "pages/listGroup/listGroup",
+    "pages/arrayDemo/arrayDemo",
+    "pages/marquee/marquee"
   ],
   "window": {
     "backgroundTextStyle": "light",

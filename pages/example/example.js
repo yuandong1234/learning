@@ -40,6 +40,10 @@ Page({
       {
         id: 8,
         title: '列表展开收起'
+      },
+      {
+        id: 9,
+        title: '数组的创建、对象创建、对象属性的添加、赋值'
       }
     ]
   },
@@ -134,6 +138,9 @@ Page({
         break;
       case 8: //列表展开收起
         path = "../listGroup/listGroup"
+        break;
+      case 9: //数组的创建、对象创建、对象属性的添加、赋值
+        path = "../arrayDemo/arrayDemo"
         break;
     }
     wx.navigateTo({
